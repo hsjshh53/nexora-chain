@@ -28,6 +28,13 @@ export default defineConfig({
       type: "edr-simulated",
       chainType: "op",
     },
+    nexora: {
+      type: "http",
+      chainType: "l1",
+      chainId: 9002,
+      url: "http://127.0.0.1:28545",
+      accounts: [configVariable("NEXORA_PRIVATE_KEY")],
+    },
     sepolia: {
       type: "http",
       chainType: "l1",
